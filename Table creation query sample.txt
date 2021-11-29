@@ -1,0 +1,13 @@
+CREATE TABLE inviteesext (
+    inviteeextid NUMBER NOT NULL,
+    name         VARCHAR2(20),
+    type         VARCHAR2(20),
+    appoinmentid NUMBER
+)
+LOGGING;
+ALTER TABLE inviteesext ADD CONSTRAINT inviteesext_pk PRIMARY KEY ( inviteeextid );
+ALTER TABLE inviteesext
+    ADD CONSTRAINT inviteeext_app_fk FOREIGN KEY ( appoinmentid )
+        REFERENCES demoproject.appointments ( appointmentid )
+            ON DELETE CASCADE
+    NOT DEFERRABLE;

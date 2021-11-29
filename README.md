@@ -1,2 +1,2 @@
 # ADF Docs
- Personal repo to save ADF findings
+ Personal repo to save ADF code snippets for future reference

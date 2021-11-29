@@ -1,0 +1,9 @@
+// Display foreign key name(replace contactId):
+
+// Comment out 
+<af:convertnumber..../>
+
+
+// Paste this: 
+converter="#{bindings.Contactid.converter}"
+// as a drop down attribute

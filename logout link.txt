@@ -1,0 +1,8 @@
+// Logout Link:
+
+<af:goLink text="Logout" id="gl2"   
+     destination="/adfAuthentication?logout=true&amp;end_url=/faces/login.jspx"  
+     accessKey="L" shortDesc="Logs-out current user session."/>
+
+
+// Use link of authenticated page(not login page) in end_url to goto login page after logout

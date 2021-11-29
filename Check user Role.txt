@@ -1,0 +1,5 @@
+#{securityContext.userInRole['admin']}
+
+// Get username
+
+#{securityContext.userName}

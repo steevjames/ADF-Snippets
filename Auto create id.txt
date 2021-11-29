@@ -1,0 +1,8 @@
+// Auto create Id from Java class:
+
+protected void create(AttributeList attributeList) {
+    super.create(attributeList);
+        SequenceImpl seq= new SequenceImpl("COMMONSEQUENCE",getDBTransaction().getRootApplicationModule());
+        BigDecimal noteid=new BigDecimal(seq.getSequenceNumber().toString());
+        setFileid(noteid);
+    }

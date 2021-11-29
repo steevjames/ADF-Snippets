@@ -1,0 +1,7 @@
+   protected void create(AttributeList attributeList) {
+        ADFContext adfCtx = ADFContext.getCurrent();
+        SecurityContext secCntx = adfCtx.getSecurityContext();
+        String value = secCntx.getUserName();
+        setCreatedby(value);
+        super.create(attributeList);
+    }

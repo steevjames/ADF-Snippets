@@ -1,0 +1,16 @@
+// Auto create file via groovy(Replace Interaction):
+// Replace attribute name & expression script name. Replace COMMONSEQUENCE with sequence name
+
+//Groovy Scripts for sfa.model.entities.Interaction
+
+package sfa.model.entities
+import oracle.jbo.script.annotation.TransientValueExpression;
+import oracle.jbo.server.SequenceImpl;
+import groovy.transform.TypeChecked;
+import groovy.transform.TypeCheckingMode;
+@TransientValueExpression(attributeName="Interactionid")
+@TypeChecked(TypeCheckingMode.SKIP)
+def Interactionid_ExpressionScript_Expression()
+{
+(new oracle.jbo.server.SequenceImpl("COMMONSEQUENCE",adf.object.getDBTransaction())).getSequenceNumber()
+}
